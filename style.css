@@ -1,0 +1,44 @@
+.left-container {
+  width: 35%;
+  float: left;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.right-container {
+  width: 65%;
+  background-color: blue;
+  float: right;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  right: 0px;
+}
+
+.left-container > .image:first-child {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.left-container .rectangle {
+  float: left;
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  height: 180px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.left-container .rectangle .logo {
+  float: left;
+  position: absolute;
+  display: block;
+  top: 5px;
+  height: 130px;
+}
