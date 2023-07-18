@@ -1,18 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 .left-container {
   width: 35%;
   float: left;
   position: relative;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
+  padding: 0;
+  margin: 0;
+  border: none;
 }
 
 .right-container {
   width: 65%;
   background-color: blue;
   float: right;
-  position: absolute;
+  position: relative;
   top: 0px;
   right: 0px;
   bottom: 0px;
@@ -24,21 +29,39 @@
   max-width: 100%;
   height: auto;
 }
-
-.left-container .rectangle {
-  float: left;
-  position: absolute;
-  top: 250px;
-  width: 100%;
-  height: 180px;
-  background-color: black;
-  opacity: 0.5;
-}
-
-.left-container .rectangle .logo {
+.left-container .logo {
   float: left;
   position: absolute;
   display: block;
-  top: 5px;
-  height: 130px;
+  top: 1vh;
+  left: 7vw;
+  height: 13vh;
+
+}
+
+.left-container .rectangle {
+  
+  position: absolute;
+  width: 100%;
+  height: 15vh;
+  background-color: black;
+  opacity: 0.5;
+  top: 23vh;
+  left: 0;
+  z-index: 1;
+}
+@font-face {
+  font-family: Norse;
+  src: url(./Norse-Bold.otf);
+}
+.left-container .text {
+  font-family: Norse, Arial, Helvetica, sans-serif;
+  font-size: 150px;
+  color: rgb(255, 255, 255);
+  position: relative;
+  width: 100%;
+  left: 13vw;
+  height: 2vh;
+  top: -10vh;
+  z-index: 1;
 }
