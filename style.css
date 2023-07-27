@@ -11,17 +11,15 @@ body {
   padding: 0;
   margin: 0;
   border: none;
+  margin: 0 auto;
 }
 
 .right-container {
   width: 65%;
-  background-color: blue;
+  background-color: #f9fafb;
   float: right;
   position: relative;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  right: 0px;
+  height: 100vh;
 }
 
 .image {
@@ -31,12 +29,12 @@ body {
   object-fit: cover;
 }
 
-.left-container .logo {
+.logo {
   float: left;
   position: relative;
-  display: block;
+  z-index: inherit;
   top: 1vh;
-  left: 5vw;
+  left: 7vw;
   height: 13vh;
 
 }
@@ -48,8 +46,8 @@ body {
   height: 15vh;
   background-color: black;
   opacity: 0.5;
-  top: 23vh;
-  left: 0;
+  top: 25%;
+  left: 0%;
   z-index: 1;
 }
 @font-face {
@@ -59,12 +57,59 @@ body {
 
 .text {
   font-family: Norse, Arial, Helvetica, sans-serif;
-  font-size: 150px;
+  font-size: 15vh;
   color: rgb(255, 255, 255);
   position: relative;
-  width: 100%;
-  left: 5vw;
+
+  left: 13vw;
   height: 2vh;
-  top: -10vh;
-  z-index: 1;
+  top: -15vh;
+  z-index: inherit;
+}
+
+.text-form {
+  padding-left: 50px;
+  text-align: left;
+  padding-top: 15vh;
+}
+
+.form-rectangle{
+  background-color: white;
+  position: inherit;
+  height: 30vh;
+  box-shadow:  0 6px 8px -4px grey;
+}
+
+.form-title{
+  padding-left: 50px;
+}
+
+
+.form-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+  gap: 50px; /* Gap between form rows and columns */
+  max-width: 600px; /* Limit the width of the form container */
+  margin-left: 50px; /* Center the form on the page */
+  padding: 10px; /* Add some padding around the form */
+ 
+}
+
+/* Style for each row in the form */
+.form-row {
+  display: grid;
+  grid-template-rows: auto 1fr; /* Two rows in each form row */
+  padding: auto;
+}
+
+/* Style for the labels in each row */
+.form-row label {
+  grid-row: 1; /* Place the label in the first row */
+}
+
+/* Style for the input elements in each row */
+.form-row input {
+  grid-row: 2; /* Place the input element in the second row */
+  width: 100%; /* Make the input element fill the available space */
+  padding: 5px; /* Add some padding for aesthetics */
 }
