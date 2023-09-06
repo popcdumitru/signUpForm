@@ -86,13 +86,14 @@ body {
 
 
 .form-container {
+  
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Three equal columns */
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns */
   gap: 50px; /* Gap between form rows and columns */
   max-width: 600px; /* Limit the width of the form container */
   margin-left: 50px; /* Center the form on the page */
-  padding: 10px; /* Add some padding around the form */
- 
+  margin-right: auto; /* Center the form on the page */
+  padding: 15px; /* Add some padding around the form */
 }
 
 /* Style for each row in the form */
@@ -105,6 +106,7 @@ body {
 /* Style for the labels in each row */
 .form-row label {
   grid-row: 1; /* Place the label in the first row */
+  border-radius: 5px;
 }
 
 /* Style for the input elements in each row */
@@ -112,4 +114,26 @@ body {
   grid-row: 2; /* Place the input element in the second row */
   width: 100%; /* Make the input element fill the available space */
   padding: 5px; /* Add some padding for aesthetics */
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Initial border color */
+}
+
+/* Style for the input elements when focused */
+.form-row input:focus {
+  border-color: blue; /* Change the border color to red when focused */
+  
+  outline: none; /* Removes the black outline */
+}
+
+.button{
+  background-color: #596d48; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 50px;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  border-radius: 10px;
+  margin-left: 50px;
+  font-size: 16px;
 }
